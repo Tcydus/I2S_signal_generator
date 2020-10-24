@@ -1,0 +1,8 @@
+set_global_assignment -name IP_TOOL_NAME "ROM: 1-PORT"
+set_global_assignment -name IP_TOOL_VERSION "13.1"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "SineROM.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SineROM.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SineROM_inst.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SineROM.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SineROM.cmp"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "SineROM_syn.v"]

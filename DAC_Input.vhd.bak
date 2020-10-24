@@ -1,0 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DAC_Input is 
+	generic ( RATIO   : INTEGER := 8;
+             WIDTH   : INTEGER := 16);
+	port(	CLK,RST_BTN : in std_logic;
+			XMT,FMT,LCK,DIN,BCK,SCL,DMP,FLT : out std_logic);
+end DAC_Input;
+
+architecture DAC_Input_Arch of DAC_Input is 
+
+	
+	component freqDivider is
+		generic(T_cnt : integer := 4); -- (10000) 500 Hz
+		port(	clk_in : in std_logic;
+				clk_out : out std_logic);
+	end component;
+	
+	signal SOFT_MUTE 			: std_logic := '0' ;
+	signal SOFT_UNMUTE 		: std_logic := '1' ;
+	signal I2S_MODE 			: std_logic := '0' ;
+	signal LEFT_JUSTIFIED 	: std_logic := '1' ;
+	signal DMP_44kHzENB 		: std_logic := '1' ;
+	signal FILTER_NORMDELAY : std_logic := '0';
+	signal FILTER_LOWDELAY 	: std_logic := '1';
+	
+	
+	
+	begin
+	XMT <= SOFT_UNMUTE ;
+	FMT <= I2S_MODE;
+	DMP <= DMP_44kHzENB;
+	FLT <= FILTER_NORMDELAY;
+
+	
+  --SCL <= MCLK;
+	
+
+end DAC_Input_Arch;

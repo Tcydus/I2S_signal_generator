@@ -1,0 +1,13 @@
+
+State Machine - |DAC_Input|I2S:I2S_Module|currentState
+Name currentState.waitForStartState currentState.increaseAddressState currentState.waitForReadyState currentState.resetState 
+currentState.resetState 0 0 0 0 
+currentState.waitForReadyState 0 0 1 1 
+currentState.increaseAddressState 0 1 0 1 
+currentState.waitForStartState 1 0 0 1 
+
+State Machine - |DAC_Input|I2S:I2S_Module|I2S_Transmitter:Transmitter|currentState
+Name currentState.transmitWordState currentState.loadWordState currentState.resetState 
+currentState.resetState 0 0 0 
+currentState.loadWordState 0 1 1 
+currentState.transmitWordState 1 0 1 

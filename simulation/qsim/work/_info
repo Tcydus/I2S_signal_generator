@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Desktop_D\Kmutnb_Cpre\Signal\Project\I2S_signal_generator\simulation\qsim
+vDAC_Input
+Z1 !s100 eYjRe1NE@ET;:a@nbm==j1
+Z2 IPc>i1RS<IFCGkT9dA89XX0
+Z3 VJb;jR4NCVQ]F8L5bRS`o`2
+Z4 dD:\Desktop_D\Kmutnb_Cpre\Signal\Project\I2S_signal_generator\simulation\qsim
+Z5 w1603552650
+Z6 8DAC_Input.vo
+Z7 FDAC_Input.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|DAC_Input.vo|
+Z10 o-work work -O0
+Z11 n@d@a@c_@input
+!i10b 1
+!s85 0
+Z12 !s108 1603552651.358000
+Z13 !s107 DAC_Input.vo|
+!s101 -O0
+vDAC_Input_vlg_check_tst
+!i10b 1
+Z14 !s100 >D6Om>_IM;jmYRS5Nn6Ak2
+Z15 IejMQf?EY`hGSV0i4glJ_@2
+Z16 Vh7lGFSck;`4C[Nc9zW>4X0
+R4
+Z17 w1603552649
+Z18 8Waveform.vwf.vt
+Z19 FWaveform.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1603552651.565000
+Z21 !s107 Waveform.vwf.vt|
+Z22 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R10
+Z23 n@d@a@c_@input_vlg_check_tst
+vDAC_Input_vlg_sample_tst
+!i10b 1
+Z24 !s100 e2I[YEM2_=NKaVQj]OeTV0
+Z25 I^i9bB7b;<WOh`VJR2@3L]1
+Z26 VBm<16Y<V]_LoP]_T9?OR[0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@d@a@c_@input_vlg_sample_tst
+vDAC_Input_vlg_vec_tst
+!i10b 1
+!s100 hkVlFGz5Z5K;@6Tn@zHW92
+I8Mi]o860mo;k;k;QI6mWV1
+Z28 VJVR9zMH>ZhlQQmFb[mJfC3
+R4
+R17
+R18
+R19
+Z29 L0 351
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@d@a@c_@input_vlg_vec_tst
