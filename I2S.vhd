@@ -34,22 +34,22 @@ architecture I2S_Arch of I2S is
              q : out std_logic_vector(15 downto 0));
    end component;
 
-begin
+	begin
 
-    Transmitter : I2S_Transmitter 
-		generic map( data_width => data_width)
-		port map( CLK => SCLK_temp,
-                RST => RST,
-                ready => ready,
-                Tx => Tx,
-                LRCLK => LRCLK,
-                SCLK => SCLK,
-                SD => SD);
+		Transmitter : I2S_Transmitter 
+			generic map( data_width => data_width)
+			port map( CLK => SCLK_temp,
+						 RST => RST,
+						 ready => ready,
+						 Tx => Tx,
+						 LRCLK => LRCLK,
+						 SCLK => SCLK,
+						 SD => SD);
 
-    ROM : SineROM 
-		port map( address => ROM_Address,
-                clock => MCLK,
-                q => ROM_Data);
+		ROM : SineROM 
+			port map( address => ROM_Address,
+						 clock => MCLK,
+						 q => ROM_Data);
 
     process
         variable CNT    : INTEGER := 0;
@@ -97,10 +97,11 @@ begin
                     Word_CNT := 0;
                 end if;
                 CurrentState <= waitForReadyState;
-
         end case;
+		  
         if(RST = '0') then
             CurrentState <= resetState;
         end if;
+		  
     end process;
 end I2S_Arch;

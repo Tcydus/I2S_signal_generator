@@ -15,7 +15,6 @@ architecture freqDivider_arch of freqDivider is
 	
 	process(CLK_IN)
 		begin
-		
 		if rising_edge(CLK_IN) then
 			if (cnt = T_cnt-1) then
 				if (cnt = duty) then
@@ -32,8 +31,5 @@ architecture freqDivider_arch of freqDivider is
 			end if;		
 		end if;
 	end process;
-
-	
-	
 
 end freqDivider_arch;

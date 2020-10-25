@@ -1,4 +1,3 @@
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -65,6 +64,7 @@ architecture I2S_Transmitter_Arch of I2S_Transmitter is
 			currentState <= resetState;
 		end if;
 	end process;
+	
 	ready <= ready_temp;
 	LRCLK <= LRCLK_temp;
 	SCLK <= CLK and ENB;
